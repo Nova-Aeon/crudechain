@@ -16,7 +16,6 @@ func (k msgServer) UpdatePost(goCtx context.Context, msg *types.MsgUpdatePost) (
 	var post = types.Post{
 		Creator: msg.Creator,
 		Id:      msg.Id,
-		Title:   msg.Title,
 		Body:    msg.Body,
 	}
 	val, found := k.GetPost(ctx, msg.Id)

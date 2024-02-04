@@ -42,8 +42,7 @@ message MsgUpdateParamsResponse {}
 message MsgCreatePost {
   option (cosmos.msg.v1.signer) = "creator";
   string creator = 1;
-  string title   = 2;
-  string body    = 3;
+  string body    = 2;
 }
 
 message MsgCreatePostResponse {
@@ -53,9 +52,8 @@ message MsgCreatePostResponse {
 message MsgUpdatePost {
   option (cosmos.msg.v1.signer) = "creator";
   string creator = 1;
-  string title   = 2;
-  string body    = 3;
-  uint64 id      = 4;
+  string body    = 2;
+  uint64 id      = 3;
 }
 
 message MsgUpdatePostResponse {}
