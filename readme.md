@@ -32,7 +32,7 @@ crudechaind q crude list-post
 4. Update a Post:
 
 ```
-crudechaind tx crude update-post <id> <"new message"> --from <username> --chain-id crudechain
+crudechaind tx crude update-post <newTitle> <newBody> <id> --from <username> --chain-id crudechain
 ```
 
 5. Delete a Post:
