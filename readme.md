@@ -9,6 +9,38 @@ ignite chain serve
 
 `serve` command installs dependencies, builds, initializes, and starts your blockchain in development.
 
+### Functionalities
+
+1. Create a post:
+
+```
+crudechaind tx crude create-post <title> <body> --from <username:alice/bob> --chain-id crudechain
+```
+
+2. View a Post:
+
+```
+crudechaind q crude show-post <id>
+```
+
+3. List All Posts:
+
+```
+crudechaind q crude list-post
+```
+
+4. Update a Post:
+
+```
+crudechaind tx crude update-post <id> <"new message"> --from <username> --chain-id crudechain
+```
+
+5. Delete a Post:
+
+```
+crudechaind tx crude delete-post <id> --from <username> --chain-id crudechain
+```
+
 ### Configure
 
 Your blockchain in development can be configured with `config.yml`. To learn more, see the [Ignite CLI docs](https://docs.ignite.com).
