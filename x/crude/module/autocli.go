@@ -44,15 +44,15 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 				},
 				{
 					RpcMethod:      "CreatePost",
-					Use:            "create-post [title] [body]",
+					Use:            "create-post [body]",
 					Short:          "Send a create-post tx",
-					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "title"}, {ProtoField: "body"}},
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "body"}},
 				},
 				{
 					RpcMethod:      "UpdatePost",
-					Use:            "update-post [title] [body] [id]",
+					Use:            "update-post [body] [id]",
 					Short:          "Send a update-post tx",
-					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "title"}, {ProtoField: "body"}, {ProtoField: "id"}},
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "body"}, {ProtoField: "id"}},
 				},
 				{
 					RpcMethod:      "DeletePost",
