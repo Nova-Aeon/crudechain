@@ -41,6 +41,9 @@ crudechaind tx crude update-post <newTitle> <newBody> <id> --from <username> --c
 crudechaind tx crude delete-post <id> --from <username> --chain-id crudechain
 ```
 
+### Consensus-Breaking
+Switch to branch 'consensus-breaking'. The post data structure is modified (title deleted). All commands above should remove the parameter title before running.
+
 ### Configure
 
 Your blockchain in development can be configured with `config.yml`. To learn more, see the [Ignite CLI docs](https://docs.ignite.com).
