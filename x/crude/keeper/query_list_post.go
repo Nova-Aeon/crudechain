@@ -9,7 +9,7 @@ import (
     "google.golang.org/grpc/codes"
     "google.golang.org/grpc/status"
 
-    "blog/x/blog/types"
+    "crudechain/x/crude/types"
 )
 
 func (k Keeper) ListPost(ctx context.Context, req *types.QueryListPostRequest) (*types.QueryListPostResponse, error) {
