@@ -8,10 +8,9 @@ import (
 
 var _ sdk.Msg = &MsgUpdatePost{}
 
-func NewMsgUpdatePost(creator string, title string, body string, id uint64) *MsgUpdatePost {
+func NewMsgUpdatePost(creator string, body string, id uint64) *MsgUpdatePost {
 	return &MsgUpdatePost{
 		Creator: creator,
-		Title:   title,
 		Body:    body,
 		Id:      id,
 	}
